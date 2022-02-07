@@ -38,15 +38,4 @@
   "description": "**",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/abidemi-mina/JABY.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/abidemi-mina/JABY/issues"
-  },
-  "homepage": "https://github.com/abidemi-mina/JABY#readme"
-}
+  "devDependencies": {}}
