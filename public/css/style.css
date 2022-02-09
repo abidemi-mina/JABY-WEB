@@ -70,6 +70,10 @@ hr {
   margin-bottom: 20px;
   border: 0;
 }
+#login img{
+  height: 50rem;
+  width:100%;
+}
 /* Navigation */
 #menu {
   padding: 15px;
