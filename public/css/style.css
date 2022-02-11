@@ -74,6 +74,11 @@ hr {
   height: 50rem;
   width:100%;
 }
+/* Search bar  */
+
+.home-searchbar .search-bar{
+  height: 44px;
+}
 /* Navigation */
 #menu {
   padding: 15px;
