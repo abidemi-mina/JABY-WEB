@@ -1,5 +1,10 @@
+import { useState } from "react";
+import { ButtonGroup, Dropdown, DropdownButton } from "react-bootstrap";
+import DropdownItem from "react-bootstrap/esm/DropdownItem";
+import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
 import { Link } from "react-router-dom"
 export const Navigation = (props) => {
+  const [isShown, setIsShown] = useState(false);
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
       <div className='container'>
@@ -16,10 +21,13 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
           </button>
-          <a className='navbar-brand page-scroll' href='#page-top'>
+          <a className='navbar-brand page-scroll' href='/#home'>
           JABY 
           </a>{' '}
         </div>
+        
+     
+     
 
         <div
           className='collapse navbar-collapse'
@@ -36,26 +44,19 @@ export const Navigation = (props) => {
                 About
               </a>
             </li>
-            <li>
-              <a href='/#services' className='page-scroll'>
-                Services
+            <li as={ButtonGroup} >
+              <a href='/#port' className='page-scroll' as={DropdownToggle}onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
+                Courses
               </a>
+              
             </li>
-            <li>
-              <a href='/#portfolio' className='page-scroll'>
-                Gallery
-              </a>
-            </li>
+           
             <li>
               <a href='/#testimonials' className='page-scroll'>
                 Testimonials
               </a>
             </li>
-            <li>
-              <a href='/#team' className='page-scroll'>
-                Team
-              </a>
-            </li>
+            
             <li>
               <a href='#contact' className='page-scroll'>
                 Contact

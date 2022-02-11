@@ -1,4 +1,5 @@
 import { useState,useEffect } from "react"
+import DropdownItem from "react-bootstrap/esm/DropdownItem";
 import { Link } from "react-router-dom";
 import JsonData from "../data/data.json";
 import { About } from "./about"
@@ -12,16 +13,19 @@ import { Testimonials } from "./testimonials"
 
 export const Home = (props) => {
   const [landingPageData, setLandingPageData] = useState({});
+  const [isShown, setIsShown] = useState(false);
   useEffect(() => {
     setLandingPageData(JsonData);
   }, []);
   const header=landingPageData.Header
   console.log(header);
   
+  
   return (
     
     <div>
-      <header id='header'>
+      <header id='header' className="top">
+      
     <div className='intro'>
       <div className='overlay'>
         <div className='container'>
@@ -32,17 +36,28 @@ export const Home = (props) => {
                 <span></span>
               </h1>
               <p>{header ? header.paragraph : 'Loading'}</p>
-              <a
-                href='#features'
-                className='btn btn-custom btn-lg page-scroll'
-              >
-                Learn More
-              </a>{' '}
+              <a href='#features'className='btn btn-custom btn-lg page-scroll' >Learn More</a>{' '}
+              <div class="search-bar-container">
+                <div class="home-searchbar">
+                  <form>
+                    <label for="home-search" class="search-bar-label sr-only">Search:</label>
+                    <div class="d-flex home-search-box">
+                      <input id="home-search" spellcheck="false" class="search-bar" placeholder="Search our 3000+ courses"/ >
+                        <button type="submit" class="btn-inverse-brand form-submit edit-submit btn btn-brand">Search</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    {isShown && (
+                <div as={DropdownItem}>
+                  I'll appear when you hover over the button.
+                </div>
+              )}
   </header>
   <div id='features' className='text-center'>
       <div className='container'>
