@@ -70,9 +70,21 @@ hr {
   margin-bottom: 20px;
   border: 0;
 }
-#login img{
+.login img{
   height: 50rem;
   width:100%;
+}
+/* login form container */
+#cont{
+  background-color:lightgray;
+  height:30rem;
+  width:500px
+}
+/* form register */
+#form{
+  background-color:lightgray;
+  height:62rem;
+  width:500px
 }
 /* Search bar  */
 
@@ -611,5 +623,20 @@ label {
 @media (max-width: 768px) {
   #about img {
     margin: 50px 0;
+  }
+}
+@media only screen and (min-width:320px) and (max-width: 1128px) {
+  .parent{
+    display: flex;
+    flex-direction: column;
+  }
+  .login img{
+    height: 30rem; 
+  }
+  #cont{
+    width: 400px;
+  }
+  #form{
+    width: 400px;
   }
 }
