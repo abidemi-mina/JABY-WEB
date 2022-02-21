@@ -12,7 +12,7 @@ export default function Register(props) {
             <img src={Wall} alt="wallpaper" srcset="" />
         </div>
         <Container id='form'>
-            <h2 className='text-center'>Register here</h2>
+            <h2 className='text-center pt-5'>Register here</h2>
         <Form className='col-sm-12' >
         <Form.Group as={Row} className="mb-3" controlId="formBasicPassword">
                 <Col sm={8}>

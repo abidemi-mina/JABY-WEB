@@ -1,9 +1,11 @@
-import { useEffect } from "react";
-import { useState } from "react";
-import axios from "axios";
+// import { useEffect } from "react";
+// import { useState } from "react";
+// import axios from "axios";
+// import 
 
 export const Services = (props) => {
-  const{data}=props;
+  console.log(props)
+  // const{ data }=props;
  
 
   // for (let index = 0; index < data.length; index++) {
