@@ -1,10 +1,9 @@
-import { useState } from "react";
-import { ButtonGroup, Dropdown, DropdownButton } from "react-bootstrap";
-import DropdownItem from "react-bootstrap/esm/DropdownItem";
-import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
+// import { useState } from "react";
+import { ButtonGroup} from "react-bootstrap";
+// import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
 import { Link } from "react-router-dom"
 export const Navigation = (props) => {
-  const [isShown, setIsShown] = useState(false);
+  // const [ setIsShown] = useState(false);
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
       <div className='container'>
@@ -40,27 +39,28 @@ export const Navigation = (props) => {
               </Link>
             </li>
             <li>
-              <a href='/#about' className='page-scroll'>
+              <Link to='/about' className='page-scroll'>
                 About
-              </a>
+              </Link>
             </li>
             <li as={ButtonGroup} >
-              <a href='/#port' className='page-scroll' as={DropdownToggle}onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
+              <Link to='/port' className='page-scroll'>
                 Courses
-              </a>
+              </Link>
               
             </li>
            
             <li>
-              <a href='/#testimonials' className='page-scroll'>
+        
+              {/* <Link to='/testimonials' className='page-scroll'>
                 Testimonials
-              </a>
+              </Link> */}
             </li>
             
             <li>
-              <a href='#contact' className='page-scroll'>
+              <Link to='/contact' className='page-scroll'>
                 Contact
-              </a>
+              </Link>
             </li>
             <li>
               <Link as={Link} to='/register' className='page-scroll'>
@@ -71,6 +71,15 @@ export const Navigation = (props) => {
             <Link as={Link} to='/login' className='page-scroll'>
                 Login
               </Link>
+            </li>
+            <li className="dropdown">
+               <Link to='#'>me</Link>
+               <ul className="dropdown-content">
+                    <li><Link to="./shop-details">Shop Details</Link></li>
+                    <li><Link to="./shoping-cart">Shoping Cart</Link></li>
+                    <li><Link to="./checkout">Check Out</Link></li>
+                    <li><Link to="./blog-details">Blog Details</Link></li>
+                </ul>
             </li>
           </ul>
         </div>
