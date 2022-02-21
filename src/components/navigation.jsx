@@ -1,5 +1,5 @@
 // import { useState } from "react";
-import { ButtonGroup } from "react-bootstrap";
+import { ButtonGroup, Card, Col, Row } from "react-bootstrap";
 import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
 import { Link } from "react-router-dom"
 export const Navigation = (props) => {
@@ -43,26 +43,41 @@ export const Navigation = (props) => {
                 About
               </a>
             </li>
-            <li className="dropdown" >
-            <Link to='#'>Courses</Link>
-            <ul className="dropdown-content">
-                    <li><Link to="./shop-details">Shop Details</Link></li>
-                    <li><Link to="./shoping-cart">Shoping Cart</Link></li>
-                    <li><Link to="./checkout">Check Out</Link></li>
-                    <li><Link to="./blog-details">Blog Details</Link></li>
-                </ul>
-              
-            </li>
-            
-           
+
             <li>
               <a href='/#testimonials' className='page-scroll'>
                 Testimonials
               </a>
             </li>
-            
+            <li className="dropdown">
+              <Link to='#'>Courses</Link>
+              <ul className="dropdown-content" style={{width:'400px'}} as={Card} >
+                <Col md={4}>
+                  <h4>Beginners Courses</h4>
+                    {props.data ? props.data.Beginners.map((langs) =>(
+                      <li><Link   to="./shop-details">{langs.name}</Link></li>
+                    )) :'loading...'}
+                </Col>
+                <Col md={4}>
+                <h4>Intermediate Courses</h4>
+                    {props.data ? props.data.Intermediate.map((langs) =>(
+                      <li><Link   to="./shop-details">{langs.name}</Link></li>
+                    )) :'loading...'}
+                </Col>
+                <Col md={4}>
+                <h4>Advanced Courses</h4>
+                    {props.data ? props.data.Advanced.map((langs) =>(
+                      <li><Link   to="./shop-details">{langs.name}</Link></li>
+                    )) :'loading...'}
+                </Col>
+                <Col>
+                <a href="jfujkmd"> heum cnjdcbjmnn jm  kkhb</a>
+                </Col>    
+              </ul> 
+            </li>
             <li>
               <a href='#contact' className='page-scroll'>
+                
                 Contact
               </a>
             </li>

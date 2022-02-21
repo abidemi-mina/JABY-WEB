@@ -24,7 +24,7 @@ const App = () => {
 // console.log(JsonData["Programming-Languages"].Beginners);
   return (
     <div>
-      <Navigation />
+      <Navigation data={data.ProgrammingLanguages} />
       
       <Routes>
         <Route path='/' element={<Home/>} />
