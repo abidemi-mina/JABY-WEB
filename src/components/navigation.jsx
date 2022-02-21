@@ -1,10 +1,9 @@
-import { useState } from "react";
-import { ButtonGroup, Dropdown, DropdownButton } from "react-bootstrap";
-import DropdownItem from "react-bootstrap/esm/DropdownItem";
+// import { useState } from "react";
+import { ButtonGroup } from "react-bootstrap";
 import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
 import { Link } from "react-router-dom"
 export const Navigation = (props) => {
-  const [isShown, setIsShown] = useState(false);
+  // const [isShown, setIsShown] = useState(false);
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
       <div className='container'>
@@ -45,7 +44,7 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li as={ButtonGroup} >
-              <a href='/#port' className='page-scroll' as={DropdownToggle}onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
+              <a href='/#port' className='page-scroll' as={DropdownToggle}>
                 Courses
               </a>
               

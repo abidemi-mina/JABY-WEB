@@ -182,6 +182,7 @@
     }
   ],
   "Country" :[ 
+    {"name": "Select your country", "code": "SELECT"}, 
     {"name": "Afghanistan", "code": "AF"}, 
     {"name": "Åland Islands", "code": "AX"}, 
     {"name": "Albania", "code": "AL"}, 
@@ -425,12 +426,14 @@
     {"name": " Zambia", "code": " ZM"}, 
     {"name": " Zimbabwe", "code": " ZW"} 
   ],
+  
   "ProgrammingLanguages":{
+    
     "Beginners":[
       { "name": "HTML", "description": "", "price": "", "logo": "img/langs/Html 5.png"},
       { "name": "CSS", "description": "", "price": "", "logo": "img/langs/CSS3.png"},
       { "name": "Javascript", "description": "", "price": "", "logo": "img/langs/javascript.png"},
-      { "name": "Bootstrap 5", "description": "", "price": "", "logo": "img/langs/bootsrap.png"},
+      { "name": "Bootstrap5", "description": "", "price": "", "logo": "img/langs/bootstrap.png"},
       { "name": "Jquery", "description": "", "price": "", "logo": "img/langs/jquery-icon.jpg"},
       { "name": "Python", "description": "", "price": "", "logo": "img/langs/python.png"},
       { "name": "Ruby", "description": "", "price": "", "logo": "img/langs/ruby.png"},
@@ -438,6 +441,7 @@
       { "name": "React", "description": "", "price": "", "logo": "img/langs/react-logo.png"},
       { "name": "c#", "description": "", "price": "", "logo": "img/langs/C-Sharp.png"}
     ],
+  
     "Intermediate":[
       { "name": "Django", "description": "", "price": "", "logo": "img/langs/python-django.jpg"},
       { "name": "Algorithm", "description": "", "price": "", "logo": "img/langs/"},
@@ -460,6 +464,7 @@
       { "name": "", "description": "", "price": "", "logo": ""},
       { "name": "", "description": "", "price": "", "logo": ""}
     ]
+  
   }
   
 }

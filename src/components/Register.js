@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form,Button, Container ,Row,Col, Card} from 'react-bootstrap';
+import { Form,Button, Container ,Row,Col} from 'react-bootstrap';
 import Wall from '../images/coding-wallpaper.jpg'
 
 export default function Register(props) {
