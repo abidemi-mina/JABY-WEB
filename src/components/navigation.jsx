@@ -43,12 +43,17 @@ export const Navigation = (props) => {
                 About
               </a>
             </li>
-            <li as={ButtonGroup} >
-              <a href='/#port' className='page-scroll' as={DropdownToggle}>
-                Courses
-              </a>
+            <li className="dropdown" >
+            <Link to='#'>Courses</Link>
+            <ul className="dropdown-content">
+                    <li><Link to="./shop-details">Shop Details</Link></li>
+                    <li><Link to="./shoping-cart">Shoping Cart</Link></li>
+                    <li><Link to="./checkout">Check Out</Link></li>
+                    <li><Link to="./blog-details">Blog Details</Link></li>
+                </ul>
               
             </li>
+            
            
             <li>
               <a href='/#testimonials' className='page-scroll'>
@@ -77,3 +82,9 @@ export const Navigation = (props) => {
     </nav>
   )
 }
+
+
+
+
+
+
