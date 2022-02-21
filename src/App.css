@@ -40,3 +40,36 @@
 .dropdown-content li a {
   color:white;
 }
+#home-search{
+  padding: 20px 30px;
+  width: 400px;
+  border: none;
+  border-radius:10px;
+  margin: 10px 10px 10px 0px;
+}
+#button-submit{
+  padding:  10px 20px;
+  color: #fff;
+  /* background-image: none; */
+  background-color: #6372ff;
+}
+#button-submit:hover{
+  background-color: #808bec;
+}
+@media screen and (max-width: 400px) {
+  #home-search{
+    /* padding: 20px 30px; */
+    width: 200px;
+    /* border: none; */
+    /* border-radius:10px; */
+    /* margin: 10px 10px 10px 0px; */
+  }
+  #button-submit{
+    padding:  10px 20px;
+    color: #fff;
+    /* background-image: none; */
+    background-color: #6372ff;
+    /* width: ; */
+  }
+ 
+}

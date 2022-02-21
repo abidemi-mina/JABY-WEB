@@ -36,14 +36,18 @@ export const Home = (props) => {
                 <span></span>
               </h1>
               <p>{header ? header.paragraph : 'Loading'}</p>
+              <div className="learn">
+                <h2>Start learning from the world’s best institutions</h2>
+              </div>
               <a href='#features'className='btn btn-custom btn-lg page-scroll' >Learn More</a>{' '}
+            
               <div class="search-bar-container">
                 <div class="home-searchbar">
                   <form>
                     <label for="home-search" class="search-bar-label sr-only">Search:</label>
                     <div class="d-flex home-search-box">
                       <input id="home-search" spellcheck="false" class="search-bar" placeholder="Search our 3000+ courses"/ >
-                        <button type="submit" class="btn-inverse-brand form-submit edit-submit btn btn-brand">Search</button>
+                        <button id="button-submit" type="submit" class="btn-inverse-brand form-submit edit-submit btn btn-brand">Search</button>
                     </div>
                   </form>
                 </div>
