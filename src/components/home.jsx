@@ -17,7 +17,7 @@ export const Home = (props) => {
   useEffect(() => {
     setLandingPageData(JsonData);
   }, []);
-  const header=landingPageData.Header
+  const header=landingPageData.ProgrammingLanguages
   console.log(header);
   
   
@@ -78,12 +78,12 @@ export const Home = (props) => {
         </div>
       </div>
       
-      <About as={Link} path='/about' data={landingPageData.About} />
-      <Services as={Link} path='/services' data={landingPageData.Services} />
-      <Gallery as={Link} path='/gallery' data={landingPageData.Gallery}/>
-      <Testimonials as={Link} path='/testimonials' data={landingPageData.Testimonials} />
-      <Team as={Link} path='/team' data={landingPageData.Team} />
-      <Contact as={Link} path='/contact' data={landingPageData.Contact} />
+      <About as={Link} path='/#about' data={landingPageData.About} />
+      <Services as={Link} path='/#services' data={landingPageData.ProgrammingLanguages} />
+      <Gallery as={Link} path='/#gallery' data={landingPageData.Gallery}/>
+      <Testimonials as={Link} path='/#testimonials' data={landingPageData.Testimonials} />
+      <Team as={Link} path='/#team' data={landingPageData.Team} />
+      <Contact as={Link} path='/#contact' data={landingPageData.Contact} />
     </div>
     </div>
     

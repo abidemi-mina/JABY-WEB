@@ -10,6 +10,7 @@ export default function Login() {
             <img src={Wall} alt="wallpaper" srcset="" />
         </div>
         <Container id='cont'>
+        <h2 className='text-center'>Login here</h2>
         <Form >
             <Form.Group  as={Row} className="mb-4" controlId="formBasicEmail">
                 <Col sm={6} >

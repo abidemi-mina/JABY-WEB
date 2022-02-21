@@ -1,9 +1,9 @@
 // import { useState } from "react";
-import { ButtonGroup} from "react-bootstrap";
-// import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
+import { ButtonGroup } from "react-bootstrap";
+import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
 import { Link } from "react-router-dom"
 export const Navigation = (props) => {
-  // const [ setIsShown] = useState(false);
+  // const [isShown, setIsShown] = useState(false);
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
       <div className='container'>
