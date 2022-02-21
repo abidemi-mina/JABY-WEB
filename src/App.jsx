@@ -1,9 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import { Navigation } from "./components/navigation";
+import JsonData from './data/data.json'
 import "./App.css";
 import { Home } from "./components/home";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import { useState } from "react";
+import { useEffect } from "react";
 import { About } from "./components/about";
 
 
@@ -13,8 +16,13 @@ import { About } from "./components/about";
 // });
 
 const App = () => {
-  
+  const [data,setData]= useState({})
+  useEffect(() => {
+    setData(JsonData);
+  }, []);
 
+  
+// console.log(JsonData["Programming-Languages"].Beginners);
   return (
     <div>
       <Navigation />
@@ -23,7 +31,7 @@ const App = () => {
         <Route path="/about" element={<About/>}/>
         <Route path='/' element={<Home/>} />
         <Route path='/login' element={<Login/>}/>
-        <Route path='/register' element={<Register/>}/>
+        <Route path='/register' element={<Register  data={data.Country}/>}/>
       </Routes>
       
       {/*  */}

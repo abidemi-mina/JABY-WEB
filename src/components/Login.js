@@ -3,16 +3,16 @@ import { Form ,Button, Container, Row,Col} from 'react-bootstrap';
 import Wall from '../images/coding-wallpaper.jpg'
 export default function Login() {
   return(
-    <div style={{display:'flex',paddingTop:100}}>
+    <div className='parent' style={{display:'flex',paddingTop:100}}>
         
         
-        <div id='login'>
+        <div className='login'>
             <img src={Wall} alt="wallpaper" srcset="" />
         </div>
-        <Container width='80%'>
-        <Form>
+        <Container id='cont'>
+        <Form >
             <Form.Group  as={Row} className="mb-4" controlId="formBasicEmail">
-                <Col sm={8} >
+                <Col sm={6} >
                     <Form.Label as='h3'>Email address</Form.Label>
                     <Form.Control  type="email" placeholder="Enter email" />
                     <Form.Text className="text-muted">
@@ -22,13 +22,13 @@ export default function Login() {
             </Form.Group>
 
             <Form.Group as={Row} className="mb-3" controlId="formBasicPassword">
-                <Col sm={8}>
+                <Col sm={6}>
                 <Form.Label as='h3'>Password</Form.Label>
-                <Form.Control  type="password" placeholder="Password" />
+                <Form.Control size='lg'  type="password" placeholder="Password" />
                 </Col>  
             </Form.Group>
             <br />
-            <Button className='text-center' variant="info" type="submit">Submit</Button>
+            <Button className='text-center' variant="info" type="submit">Login</Button>
         </Form>
         </Container>
         
