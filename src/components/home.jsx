@@ -13,7 +13,7 @@ import { Testimonials } from "./testimonials"
 
 export const Home = (props) => {
   const [landingPageData, setLandingPageData] = useState({});
-  const [isShown, setIsShown] = useState(false);
+  const [isShown, ] = useState(false);
   useEffect(() => {
     setLandingPageData(JsonData);
   }, []);
