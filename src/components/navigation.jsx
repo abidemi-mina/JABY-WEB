@@ -1,6 +1,5 @@
 // import { useState } from "react";
-import { ButtonGroup } from "react-bootstrap";
-// import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
+
 import { Link } from "react-router-dom"
 export const Navigation = (props) => {
   // const [isShown, setIsShown] = useState(false);
@@ -39,28 +38,32 @@ export const Navigation = (props) => {
               </Link>
             </li>
             <li>
-              <Link to='/about' className='page-scroll'>
+              <a href='/#about' className='page-scroll'>
                 About
-              </Link>
+              </a>
             </li>
-            <li as={ButtonGroup} >
-              <Link to='/port' className='page-scroll'>
-                Courses
-              </Link>
+            <li className="dropdown" >
+            <Link to='#'>Courses</Link>
+            <ul className="dropdown-content">
+                    <li><Link to="./shop-details">Shop Details</Link></li>
+                    <li><Link to="./shoping-cart">Shoping Cart</Link></li>
+                    <li><Link to="./checkout">Check Out</Link></li>
+                    <li><Link to="./blog-details">Blog Details</Link></li>
+                </ul>
               
             </li>
+            
            
             <li>
-        
-              {/* <Link to='/testimonials' className='page-scroll'>
+              <a href='/#testimonials' className='page-scroll'>
                 Testimonials
-              </Link> */}
+              </a>
             </li>
             
             <li>
-              <Link to='/contact' className='page-scroll'>
+              <a href='#contact' className='page-scroll'>
                 Contact
-              </Link>
+              </a>
             </li>
             <li>
               <Link as={Link} to='/register' className='page-scroll'>
@@ -72,18 +75,15 @@ export const Navigation = (props) => {
                 Login
               </Link>
             </li>
-            <li className="dropdown">
-               <Link to='#'>me</Link>
-               <ul className="dropdown-content">
-                    <li><Link to="./shop-details">Shop Details</Link></li>
-                    <li><Link to="./shoping-cart">Shoping Cart</Link></li>
-                    <li><Link to="./checkout">Check Out</Link></li>
-                    <li><Link to="./blog-details">Blog Details</Link></li>
-                </ul>
-            </li>
           </ul>
         </div>
       </div>
     </nav>
   )
 }
+
+
+
+
+
+

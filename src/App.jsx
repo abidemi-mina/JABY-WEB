@@ -7,7 +7,6 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import { useState } from "react";
 import { useEffect } from "react";
-import { About } from "./components/about";
 
 
 // export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -28,7 +27,6 @@ const App = () => {
       <Navigation />
       
       <Routes>
-        <Route path="/about" element={<About/>}/>
         <Route path='/' element={<Home/>} />
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register  data={data.Country}/>}/>
