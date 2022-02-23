@@ -2,6 +2,7 @@ import React from 'react';
 import { Form ,Button, Container, Row,Col} from 'react-bootstrap';
 import Wall from '../images/coding-wallpaper.jpg'
 export default function Login() {
+    console.log('login');
   return(
     <div className='parent' style={{display:'flex',paddingTop:100}}>
         

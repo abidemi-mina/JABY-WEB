@@ -3,8 +3,10 @@
 // import axios from "axios";
 // import 
 
+import { Link } from "react-router-dom"
+
 export const Services = (props) => {
-  console.log(props)
+  console.log(props.data)
   // const{ data }=props;
  
 
@@ -38,7 +40,9 @@ export const Services = (props) => {
                   {' '}
                   <img className="" src={d.logo} alt={d.name} width={'200px'} height={'200px'} />
                   <div className='service-desc'>
-                    <h3>{d.name}</h3>
+                    <h3>
+                      <Link to={`/Course/Beginners/${d.name}`} >{d.name}...</Link> 
+                    </h3>
                     {/* <p>{d.name}</p> */}
                   </div>
                 </div>

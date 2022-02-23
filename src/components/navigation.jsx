@@ -1,5 +1,6 @@
 // import { useState } from "react";
 import { Link } from "react-router-dom"
+import { Col,Row,Card } from "react-bootstrap"
 export const Navigation = (props) => {
   // const [isShown, setIsShown] = useState(false);
   return (
@@ -53,24 +54,22 @@ export const Navigation = (props) => {
                 <Col md={4}>
                   <h4>Beginners Courses</h4>
                     {props.data ? props.data.Beginners.map((langs) =>(
-                      <li><Link   to="./shop-details">{langs.name}</Link></li>
+                      <li><Link   to='/Course'>{langs.name}</Link></li>
                     )) :'loading...'}
                 </Col>
                 <Col md={4}>
                 <h4>Intermediate Courses</h4>
                     {props.data ? props.data.Intermediate.map((langs) =>(
-                      <li><Link   to="./shop-details">{langs.name}</Link></li>
+                      <li><Link   to={`/Course/Intermediate/${langs.name}`}>{langs.name}</Link></li>
                     )) :'loading...'}
                 </Col>
                 <Col md={4}>
                 <h4>Advanced Courses</h4>
                     {props.data ? props.data.Advanced.map((langs) =>(
-                      <li><Link   to="./shop-details">{langs.name}</Link></li>
+                      <li><Link   to={`/Course/Advanced/${langs.name}`}>{langs.name}</Link></li>
                     )) :'loading...'}
                 </Col>
-                <Col>
-                <a href="jfujkmd"> heum cnjdcbjmnn jm  kkhb</a>
-                </Col>    
+                  
               </ul> 
             </li>
             <li>
