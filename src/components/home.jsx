@@ -4,10 +4,8 @@ import { Link } from "react-router-dom";
 import JsonData from "../data/data.json";
 import { About } from "./about"
 import { Contact } from "./contact"
-import { Detail } from "./details";
 import { Gallery } from "./gallery"
 import { Services } from "./services"
-// import SmoothScroll from "smooth-scroll";
 import { Team } from "./Team"
 import { Testimonials } from "./testimonials"
 
@@ -15,13 +13,10 @@ import { Testimonials } from "./testimonials"
 export const Home = (props,stage) => {
   const [landingPageData, setLandingPageData] = useState({});
   const [isShown, ] = useState(false);
-  const {Beginners,Intermediate,Advanced} = stage
-  console.log(stage);
   useEffect(() => {
     setLandingPageData(JsonData);
   }, []);
   const header=landingPageData['ProgrammingLanguages']
-  console.log(header);
   
   
   return (

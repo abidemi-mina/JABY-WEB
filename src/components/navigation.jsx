@@ -53,27 +53,27 @@ export const Navigation = (props) => {
               <ul className="dropdown-content" style={{width:'400px'}} as={Card} >
                 <Col md={4}>
                   <h4>Beginners Courses</h4>
-                    {props.data ? props.data.Beginners.map((langs) =>(
-                      <li><Link   to='/Course'>{langs.name}</Link></li>
+                    {props.data ? props.data.Beginners.map((langs,beginner) =>(
+                      <li key={beginner}><Link   to={`/Course/${langs.name}`}>{langs.name}</Link></li>
                     )) :'loading...'}
                 </Col>
                 <Col md={4}>
                 <h4>Intermediate Courses</h4>
-                    {props.data ? props.data.Intermediate.map((langs) =>(
-                      <li><Link   to={`/Course/Intermediate/${langs.name}`}>{langs.name}</Link></li>
+                    {props.data ? props.data.Intermediate.map((langs,Intern) =>(
+                      <li key={Intern}><Link   to={`/Course/${langs.name}`}>{langs.name}</Link></li>
                     )) :'loading...'}
                 </Col>
                 <Col md={4}>
                 <h4>Advanced Courses</h4>
-                    {props.data ? props.data.Advanced.map((langs) =>(
-                      <li><Link   to={`/Course/Advanced/${langs.name}`}>{langs.name}</Link></li>
+                    {props.data ? props.data.Advanced.map((langs,advanced) =>(
+                      <li key={advanced}><Link   to={`/Course/${langs.name}`}>{langs.name}</Link></li>
                     )) :'loading...'}
                 </Col>
                   
               </ul> 
             </li>
             <li>
-              <a href='#contact' className='page-scroll'>
+              <a href='/#contact' className='page-scroll'>
                 
                 Contact
               </a>

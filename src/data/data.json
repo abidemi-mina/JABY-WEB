@@ -430,12 +430,12 @@
   "ProgrammingLanguages":{
     
     "Beginners":[
-      { "name": "HTML", "description": "", "price": "", "logo": "img/langs/Html 5.png"},
-      { "name": "CSS", "description": "", "price": "", "logo": "img/langs/CSS3.png"},
+      { "name": "HTML", "description": "HTML (stands for Hypertext Markup Language) is a computer language that makes up most web pages and online applications. A hypertext is a text that is used to reference other pieces of text, while a markup language is a series of markings that tells web servers the style and structure of a document.", "price": "", "logo": "img/langs/Html 5.png"},
+      { "name": "CSS", "description": "CSS stands for Cascading Style Sheets with an emphasis placed on “Style.” While HTML is used to structure a web document (defining things like headlines and paragraphs, and allowing you to embed images, video, and other media), CSS comes through and specifies your document’s style—page layouts, colors, and fonts are all determined with CSS. Think of HTML as the foundation (every house has one), and CSS as the aesthetic choices (there’s a big difference between a Victorian mansion and a mid-century modern home).", "price": "", "logo": "img/langs/CSS3.png"},
       { "name": "Javascript", "description": "", "price": "", "logo": "img/langs/javascript.png"},
       { "name": "Bootstrap5", "description": "", "price": "", "logo": "img/langs/bootstrap.png"},
       { "name": "Jquery", "description": "", "price": "", "logo": "img/langs/jquery-icon.jpg"},
-      { "name": "Python", "description": "", "price": "", "logo": "img/langs/python.png"},
+      { "name": "Python", "description": "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.", "price": "", "logo": "img/langs/python.png"},
       { "name": "Ruby", "description": "", "price": "", "logo": "img/langs/ruby.png"},
       { "name": "PHP", "description": "", "price": "", "logo": "img/langs/php.jpg"},
       { "name": "React", "description": "", "price": "", "logo": "img/langs/react-logo.png"},
