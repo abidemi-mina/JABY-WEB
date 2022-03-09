@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom"
 import { Col,Row,Card } from "react-bootstrap"
 export const Navigation = (props) => {
+
   // const [isShown, setIsShown] = useState(false);
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
@@ -50,23 +51,23 @@ export const Navigation = (props) => {
             </li>
             <li className="dropdown">
               <Link to='#'>Courses</Link>
-              <ul className="dropdown-content" style={{width:'400px'}} as={Card} >
+              <ul className="dropdown-content" as={Card} >
                 <Col md={4}>
-                  <h4>Beginners Courses</h4>
+                  <h4>Beginners Courses </h4>
                     {props.data ? props.data.Beginners.map((langs,beginner) =>(
-                      <li key={beginner}><Link   to={`/Course/${langs.name}`}>{langs.name}</Link></li>
+                      <li key={beginner}><Link className="link" to={`/Course/${langs.name}`}>{langs.name}</Link></li>
                     )) :'loading...'}
                 </Col>
                 <Col md={4}>
-                <h4>Intermediate Courses</h4>
+                <h4>Intermediate Courses </h4>
                     {props.data ? props.data.Intermediate.map((langs,Intern) =>(
-                      <li key={Intern}><Link   to={`/Course/${langs.name}`}>{langs.name}</Link></li>
+                      <li key={Intern}><Link className="link"  to={`/Course/${langs.name}`}>{langs.name}</Link></li>
                     )) :'loading...'}
                 </Col>
                 <Col md={4}>
-                <h4>Advanced Courses</h4>
+                <h4>Advanced Courses </h4>
                     {props.data ? props.data.Advanced.map((langs,advanced) =>(
-                      <li key={advanced}><Link   to={`/Course/${langs.name}`}>{langs.name}</Link></li>
+                      <li key={advanced}><Link  className="link" to={`/Course/${langs.name}`}>{langs.name}</Link></li>
                     )) :'loading...'}
                 </Col>
                   

@@ -71,6 +71,9 @@ hr {
   margin-bottom: 20px;
   border: 0;
 }
+.link{
+  color: black;
+}
 .login img{
   height: 50rem;
   width:100%;
